@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Payment Form</title>
+  <style>
+    form {
+      width: 500px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #eee;
+    }
+    input[type="text"], select, textarea {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    input[type="submit"] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    label {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <label for="first-name">First Name:</label><br>
+    <input type="text" id="first-name" name="first-name"><br>
+    <label for="last-name">Last Name:</label><br>
+    <input type="text" id="last-name" name="last-name"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <label for="phone-number">Phone Number:</label><br>
+    <input type="text" id="phone-number" name="phone-number"><br>
+    <label for="payment-option">Payment Option:</label><br>
+    <select id="payment-option" name="payment-option">
+      <option value="credit-card">Credit Card</option>
+      <option value="debit-card">Debit Card</option>
+      <option value="paypal">PayPal</option>
+    </select><br><br>
+    <label for="interests">Interests:</label><br>
+    <textarea id="interests" name="interests" rows="5" cols="50"></textarea><br><br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
